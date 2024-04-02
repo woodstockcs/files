@@ -1,7 +1,7 @@
 function updateScore() {
   
   // Check if the bird has passed pipe1
-  if (pipe1X < 0 && !passedPipe1) {
+  if (pipe1X < birdX && !passedPipe1) {
     score++;
     passedPipe1 = true;
   }
@@ -11,7 +11,7 @@ function updateScore() {
   }
 
   // Repeat for pipe2
-  if (pipe2X < 0 && !passedPipe2) {
+  if (pipe2X < birdX && !passedPipe2) {
     score++;
     passedPipe2 = true;
   }
@@ -20,7 +20,7 @@ function updateScore() {
   }
 
   // Repeat for pipe3
-  if (pipe3X < 0 && !passedPipe3) {
+  if (pipe3X < birdX && !passedPipe3) {
     score++;
     passedPipe3 = true;
   }
