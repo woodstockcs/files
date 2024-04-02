@@ -6,7 +6,7 @@ function updateScore() {
     passedPipe1 = true;
   }
   // Reset the flag if the pipe has moved off screen and is reset
-  if (pipe1X < -50) {
+  if (pipe1X <= -50) {
     passedPipe1 = false;
   }
 
@@ -15,7 +15,7 @@ function updateScore() {
     score++;
     passedPipe2 = true;
   }
-  if (pipe2X < -50) {
+  if (pipe2X <= -50) {
     passedPipe2 = false;
   }
 
@@ -24,7 +24,7 @@ function updateScore() {
     score++;
     passedPipe3 = true;
   }
-  if (pipe3X < -50) {
+  if (pipe3X <= -50) {
     passedPipe3 = false;
   }
 }
